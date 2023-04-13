@@ -1,0 +1,17 @@
+.container-fluid{
+    background-image: url(../../../assets/bg-apresentacao.svg);
+    background-position:right;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:contain;
+    border: 1px solid #303030;
+    height:50vmax;    
+}
+
+@media (max-width: 767.98px) {
+    .container-fluid{
+        background-image: none;
+        height:auto;    
+
+    }
+}

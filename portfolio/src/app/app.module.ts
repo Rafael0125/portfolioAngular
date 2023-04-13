@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+// Animações 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
@@ -20,7 +24,8 @@ import { ProjetosComponent } from './projetos/projetos.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

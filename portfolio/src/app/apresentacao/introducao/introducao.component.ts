@@ -9,10 +9,12 @@ import { gsap } from 'gsap';
 })
 export class IntroducaoComponent implements OnInit, AfterViewInit {
 
-  public teste:Array<string> = ['Olá, Mundo']
+  public teste:string = 'Olá, Mundo'
+  public fraseMeio:string = 'Sejam bem vindos, meu nome é'
+  public nome:string = 'Rafael Navarro'
 
-  @ViewChildren('box')
-  public box !: QueryList<ElementRef>
+  @ViewChild('box')
+  public box !: ElementRef<HTMLDivElement>
   @ViewChild('meuNome')
   public meuNome!: ElementRef<HTMLSpanElement>
   @ViewChild('frase')
@@ -21,20 +23,17 @@ export class IntroducaoComponent implements OnInit, AfterViewInit {
 
   
   ngAfterViewInit(): void {
-    console.log(this.box)
 
-    this.box.forEach((boxDiv:ElementRef<HTMLDivElement>) => {
+    gsap.from(this.box.nativeElement,{rotation:0,x:-500,duration:5,delay:0}) // Ola mundo
+    gsap.to(this.box.nativeElement,{rotation:0,x:20,duration:5,delay: 0, ease:'back'})
+    
+    gsap.from(this.frase.nativeElement,{opacity:0,rotation:0,x:50,duration:5,delay:1}) // Meu nome é
+    gsap.to(this.frase.nativeElement,{opacity:1,x:50,duration:5,delay:1})
+    
+    gsap.from(this.meuNome.nativeElement,{opacity:0,rotation:0,x:50,duration:5,delay:4}) // Rafel Navarro
+    gsap.to(this.meuNome.nativeElement,{opacity:1,x:50,duration:5,delay:4})
 
-      gsap.from(boxDiv.nativeElement,{rotation:0,x:-500,duration:5,delay:0}) // Ola mundo
-      gsap.to(boxDiv.nativeElement,{rotation:0,x:20,duration:5,delay: 0, ease:'back'})
-      
-      gsap.from(this.frase.nativeElement,{opacity:0,rotation:0,x:50,duration:5,delay:1}) // Meu nome é
-      gsap.to(this.frase.nativeElement,{opacity:1,x:50,duration:5,delay:1})
-      
-      gsap.from(this.meuNome.nativeElement,{opacity:0,rotation:0,x:50,duration:5,delay:4}) // Rafel Navarro
-      gsap.to(this.meuNome.nativeElement,{opacity:1,x:50,duration:5,delay:4})
-
-    });
+    
   }
 
   constructor (){ }

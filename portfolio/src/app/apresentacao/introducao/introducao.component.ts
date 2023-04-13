@@ -9,7 +9,7 @@ import { gsap } from 'gsap';
 })
 export class IntroducaoComponent implements OnInit, AfterViewInit {
 
-  public teste:string = 'Olá, Mundo'
+  public ola:string = 'Olá, Mundo'
   public fraseMeio:string = 'Sejam bem vindos, meu nome é'
   public nome:string = 'Rafael Navarro'
 
@@ -19,6 +19,7 @@ export class IntroducaoComponent implements OnInit, AfterViewInit {
   public meuNome!: ElementRef<HTMLSpanElement>
   @ViewChild('frase')
   public frase!: ElementRef<HTMLSpanElement>
+  
 
 
   

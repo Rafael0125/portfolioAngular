@@ -3,3 +3,6 @@
     background-color: #303030;
     color: #fff;
 }
+*{
+    overflow-x: hidden;
+}

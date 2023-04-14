@@ -1,3 +1,78 @@
 <div class="container-fluid">
-    <p>projetos works!</p>
+
+    <div class="row justify-content-center display-4">
+        Projetos
+    </div>
+
+    <div class="row border"></div>
+
+    <div class="container-fluid  mt-3">
+
+        <div 
+        class="d-flex flex-wrap my-2 p-1 border-bottom bg-dark rounded" 
+        *ngFor="let projeto of projetos; let i = index"
+        [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'"> <!-- Ng for PROJETOS -->
+
+
+            <div class="col-md-6 "> <!-- Imagem -->
+                <img [src]='projeto.imagem' class="img-fluid border rounded" alt="">
+            </div>
+
+            <div class="col-md-6 "><!-- Titulo -->
+
+                <div class="row m-1 fs-2 border-bottom justify-content-center ">
+                    {{projeto.titulo}}
+                </div>
+
+                <div class="row m-1 fs-4 ">
+                    Tecnologias Usadas:
+                </div>
+                <div class="row row-cols-auto px-2">
+                    <div class="col " *ngFor="let icone of projeto.icoTec">
+                        <img [src]="icone" height="40" class="  m-auto"  alt="">                    
+                    </div>
+                </div>
+
+                <div class="row m-1 p-1 ">
+                    <div class="row fs-4">
+                        Descrição do projeto
+                    </div>
+                    
+
+                    <div class="col-12 border-top">
+                        {{projeto.descricao}}
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <div class="row row-cols-auto fs-2 " *ngFor="let link of projeto.links">
+                            <div class="col fs-4">
+                                Repositorio gitHub
+                            </div>
+                            <div class="col">
+                                <a [href]="link.repositorioGitHub">
+                                    <i class="fa-brands fa-github text-light"></i>
+                                </a>
+                            </div>
+                            <div class="col fs-4">
+                                Visite o site do projeto
+                            </div>
+
+                            <div class="col">
+                                <a [href]="link.deploy">
+                                    <i class="fa-solid fa-right-to-bracket text-light"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
 </div>

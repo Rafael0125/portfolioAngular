@@ -1,0 +1,15 @@
+.container-fluid{
+    color: #303030;
+    background: #FFFAFA;
+}
+
+.img-fluid-config{
+    width: 100%;
+    max-width: 65px; 
+    height: auto;
+}
+
+.fontEstilo{
+    font-size: 18px;
+
+}

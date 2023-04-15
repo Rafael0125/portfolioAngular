@@ -5,4 +5,11 @@
 }
 *{
     overflow-x: hidden;
+    font-family: merriweather;
+}
+
+
+@font-face {
+    font-family: "merriweather";
+    src: url(./assets/fontesPersonalizadas/merriweather/Merriweather-Regular.otf);
 }

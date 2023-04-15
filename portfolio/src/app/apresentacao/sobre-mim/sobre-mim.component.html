@@ -1,6 +1,7 @@
 <div class="container-fluid p-3" >
-    <div class="row border">
-        <div class="row mb-3">
+
+    <div class="row">
+        <div class="row mb-3"> <!-- Nome -->
             <div class="col-12 border-bottom fs-1">
                 Rafael Araujo Navarro
             </div>
@@ -10,24 +11,18 @@
         </div>
 
 
-        <div class="col-md-3">
-            <div class="row">
+        <div class="col-md-4">
+            <div class="row"> <!-- Minha foto // Icones animados-->
                 <div class="col-md-12 col-6 ">
                     <img src="../../../assets/minhaFoto.svg" class="img-fluid" alt="">
-                </div>
-
-                <div class="col-md-12 my-1 d-flex " #teste >
-                    <div *ngFor="let imagem of imagens; let i = index" class="mx-md-2 mx-1">
-                        <img [src]="imagens[i]" class="img-fluid" >
-                    </div>
                 </div>
             </div>
         </div> 
 
 
-        <div class="col-md-7 ">
+        <div class="col-md-7 p-1">
 
-            <div class="row fs-3">
+            <div class="row fontEstilo"> 
                 <div class="col-12">
                     <p>
                         Formado em Analise e Desenvolvimento de Sistemas, apaixonado por criação e desenvolvimento de aplicações Web focado no front-end.
@@ -47,5 +42,7 @@
                 </div>
             </div>
         </div>
+
     </div>
+
 </div>

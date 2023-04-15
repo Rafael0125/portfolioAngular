@@ -40,7 +40,7 @@ export const PROJETOS:Projeto[] = [
             '../../assets/icones/css.svg',
             '../../assets/icones/typeScript.svg'
         ],
-        descricao: ' projeto é um quiz sobre futebol desenvolvido em Angular, com foco na jogabilidade e variedade de perguntas. A interface é interativa e atraente, utilizando recursos como componentes e serviços do Angular. As perguntas são interessantes e desafiadoras, testando o conhecimento dos usuários sobre futebol.',
+        descricao: ' O projeto é um quiz sobre futebol desenvolvido em Angular, com foco na jogabilidade e variedade de perguntas. A interface é interativa e atraente, utilizando recursos como componentes e serviços do Angular. As perguntas são interessantes e desafiadoras, testando o conhecimento dos usuários sobre futebol.',
         links:[{
             deploy:'http://quiz-game-v2.s3-website-us-east-1.amazonaws.com/',
             repositorioGitHub:'https://github.com/Rafael0125/Quiz_Game'

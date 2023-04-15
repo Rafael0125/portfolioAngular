@@ -26,11 +26,21 @@
                 <div class="row m-1 fs-4 ">
                     Tecnologias Usadas:
                 </div>
-                <div class="row row-cols-auto px-2">
-                    <div class="col " *ngFor="let icone of projeto.icoTec">
-                        <img [src]="icone" height="40" class="  m-auto"  alt="">                    
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="row row-cols-auto px-2 d-inline"   *ngFor="let icone of projeto.icoTec">
+                                <img [src]="icone" height="40" class="m-auto" #carouselIcones  alt="">  
+                                <!-- ANIMAÇÃO DOS ICONES
+                                    <div class="col-12 my-1 d-flex " #carouselIcones >
+                                        <div *ngFor="let imagem of imagens; let i = index" class="mx-md-2 mx-1">
+                                            <img [src]="imagens[i]" class="img-fluid-config">
+                                        </div>
+                                    </div>
+                                -->
+                        </div>
                     </div>
                 </div>
+
 
                 <div class="row m-1 p-1 ">
                     <div class="row fs-4">

@@ -49,22 +49,22 @@
                         </div>
 
                         <div class="col-12 mt-3" *ngFor="let link of projeto.links">
-                            <div class="row row-cols-auto fs-3" >
-                                <div class="col fs-3">
+                            <div class="row row-cols-auto" >
+                                <div class="col fs-5">
                                     Repositorio gitHub
                                 </div>
-                                <div class="col">
+                                <div class="col fs-5">
                                     <a [href]="link.repositorioGitHub">
                                         <i class="fa-brands fa-github text-light"></i>
                                     </a>
                                 </div>
                             </div>
-                            <div class="row row-cols-auto fs-3" >
-                                    <div class="col fs-3">
+                            <div class="row row-cols-auto" >
+                                    <div class="col fs-5">
                                     Visite o site do projeto
                                 </div>
 
-                                <div class="col">
+                                <div class="col fs-5">
                                     <a [href]="link.deploy">
                                         <i class="fa-solid fa-right-to-bracket text-light"></i>
                                     </a>

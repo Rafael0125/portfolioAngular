@@ -14,6 +14,7 @@ import { MenuComponent } from './apresentacao/menu/menu.component';
 import { IntroducaoComponent } from './apresentacao/introducao/introducao.component';
 import { SobreMimComponent } from './apresentacao/sobre-mim/sobre-mim.component';
 import { ProjetosComponent } from './projetos/projetos.component';
+import { RodapeComponent } from './rodape/rodape.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ProjetosComponent } from './projetos/projetos.component';
     IntroducaoComponent,
     SobreMimComponent,
     ProjetosComponent,
+    RodapeComponent,
   ],
   imports: [
     BrowserModule,

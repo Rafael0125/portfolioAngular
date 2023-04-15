@@ -1,26 +1,33 @@
 <div class="container-fluid p-3" >
-    <div class="row">
+    <div class="row border">
+        <div class="row mb-3">
+            <div class="col-12 border-bottom fs-1">
+                Rafael Araujo Navarro
+            </div>
+            <div class="col-12 fs-4">
+                Desenvolvedor Front-End
+            </div>
+        </div>
 
-        <div class="col-6 d-flex d-md-none">
-            <div class="row ">
-                <div class="col-md-12">
+
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-12 col-6 ">
                     <img src="../../../assets/minhaFoto.svg" class="img-fluid" alt="">
                 </div>
-            </div>
-        </div>            
 
-
-        <div class="col-md-9 ">
-            <div class="row mb-3">
-                <div class="col-12 border-bottom fs-1">
-                    Rafael Araujo Navarro
-                </div>
-                <div class="col-12 fs-4">
-                    Desenvolvedor Front-End
+                <div class="col-md-12 my-1 d-flex " #teste >
+                    <div *ngFor="let imagem of imagens; let i = index" class="mx-md-2 mx-1">
+                        <img [src]="imagens[i]" class="img-fluid" >
+                    </div>
                 </div>
             </div>
+        </div> 
 
-            <div class="row ">
+
+        <div class="col-md-7 ">
+
+            <div class="row fs-3">
                 <div class="col-12">
                     <p>
                         Formado em Analise e Desenvolvimento de Sistemas, apaixonado por criação e desenvolvimento de aplicações Web focado no front-end.
@@ -38,24 +45,7 @@
                         Com profundo conhecimento em frameworks como Bootstrap e Angular, possibilitando criar soluções complexas e personalizadas, de acordo com as suas necessidades.
                     </p>
                 </div>
-
-                <div class="col-12 my-1 d-flex " #teste>
-                    <div *ngFor="let imagem of imagens; let i = index" class="mx-md-2 mx-1">
-                        <img [src]="imagens[i]" class="img-fluid">
-                    </div>
-                </div>        
-    
             </div>
         </div>
-
-        <div class="col-md-3 col-12 d-none d-md-flex justify-content-end">
-            <div class="row ">
-                <div class="col-md-12 col-6 ">
-                    <img src="../../../assets/minhaFoto.svg" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>            
-
-
     </div>
 </div>

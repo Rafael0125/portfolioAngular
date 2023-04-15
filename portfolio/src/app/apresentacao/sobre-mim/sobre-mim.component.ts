@@ -31,8 +31,8 @@ export class SobreMimComponent implements OnInit {
 
   ngAfterViewInit(): void {
 
-    gsap.from(this.teste.nativeElement,{rotation:0,x:-1000,duration:7,delay:0}) // icones Linguagens
-    gsap.to(this.teste.nativeElement,{rotation:0,x:1000,duration:7,delay: 0,repeat:-1, ease:'in-out'})
+    gsap.from(this.teste.nativeElement,{rotation:0,x:-500,duration:7,delay:0}) // icones Linguagens
+    gsap.to(this.teste.nativeElement,{rotation:0,x:500,duration:7,delay: 0,repeat:-1, ease:'in-out'})
 
   
     

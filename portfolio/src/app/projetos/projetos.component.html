@@ -8,17 +8,16 @@
 
     <div class="container-fluid  mt-3">
 
-        <div 
-        class="d-flex flex-wrap my-2 p-1 border-bottom bg-dark rounded" 
+        <div class="d-flex flex-wrap my-5 p-2 border-bottom bg-dark rounded" 
         *ngFor="let projeto of projetos; let i = index"
         [ngClass]="i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'"> <!-- Ng for PROJETOS -->
 
 
-            <div class="col-md-6 "> <!-- Imagem -->
+            <div class="col-lg-6 "> <!-- Imagem -->
                 <img [src]='projeto.imagem' class="img-fluid border rounded" alt="">
             </div>
 
-            <div class="col-md-6 "><!-- Titulo -->
+            <div class="col-lg-6 "><!-- Titulo -->
 
                 <div class="row m-1 fs-2 border-bottom justify-content-center ">
                     {{projeto.titulo}}

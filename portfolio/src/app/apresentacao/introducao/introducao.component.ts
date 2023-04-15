@@ -29,10 +29,10 @@ export class IntroducaoComponent implements OnInit, AfterViewInit {
     gsap.to(this.box.nativeElement,{rotation:0,x:20,duration:5,delay: 0, ease:'back'})
     
     gsap.from(this.frase.nativeElement,{opacity:0,rotation:0,x:50,duration:5,delay:1}) // Meu nome é
-    gsap.to(this.frase.nativeElement,{opacity:1,x:50,duration:5,delay:1})
+    gsap.to(this.frase.nativeElement,{opacity:1,x:0,duration:5,delay:1})
     
     gsap.from(this.meuNome.nativeElement,{opacity:0,rotation:0,x:50,duration:5,delay:4}) // Rafel Navarro
-    gsap.to(this.meuNome.nativeElement,{opacity:1,x:50,duration:5,delay:4})
+    gsap.to(this.meuNome.nativeElement,{opacity:1,x:30,duration:5,delay:4})
 
     
   }

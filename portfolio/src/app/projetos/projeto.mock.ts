@@ -85,7 +85,7 @@ export const PROJETOS:Projeto[] = [
         ],
         descricao: 'Projeto criado em conjunto com o professor Jamilton Damasceno no curso de Bootstrap',
         links:[{
-            deploy:'https://github.com/Rafael0125/projeto_spotify_clone/',
+            deploy:'https://rafael0125.github.io/projeto_finans//',
             repositorioGitHub:'https://rafael0125.github.io/projeto_finans/'
         }]
     },
